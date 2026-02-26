@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Nombre_app">Appventure</string>
+    <string name="comienza">Comienza</string>
+    <string name="registrate">Registrate</string>
+    <string name="intro">Inicia una nueva aventura con Appventure y descubre una nueva forma de ver el mundo</string>
+    <string name="text_intro">La aventura esta por iniciar, por favor inicia sesion</string>
+    <string name="sin_cuenta">No tienes cuenta?</string>
+    <string name="recu_contra">Recupera tu contraseña</string>
+</resources>
