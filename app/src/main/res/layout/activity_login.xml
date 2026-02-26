@@ -36,7 +36,7 @@
         app:srcCompat="@mipmap/logo_taller_2_foreground" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Inv_ini_sesion"
         android:layout_width="312dp"
         android:layout_height="67dp"
         android:layout_marginTop="20dp"
@@ -44,13 +44,13 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/Input_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView2" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/Ic_usuario_contra"
         android:layout_width="137dp"
         android:layout_height="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,13 +58,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384"
+        app:layout_constraintVertical_bias="0.383"
         app:srcCompat="@mipmap/ic_usu_cont" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Bt_Ingresa"
         android:layout_width="247dp"
         android:layout_height="75dp"
+        android:backgroundTint="@color/nombreApp"
         android:text="Ingresa"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,33 +77,34 @@
         app:strokeWidth="3dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="284dp"
-        android:layout_height="54dp"
-        android:backgroundTint="@color/white"
-        app:cornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:strokeColor="@color/nombreApp"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button5"
+        android:id="@+id/Input_usuario"
         android:layout_width="284dp"
         android:layout_height="54dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
         app:cornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="@id/button2"
-        app:layout_constraintStart_toStartOf="@id/button2"
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Inv_ini_sesion"
         app:strokeColor="@color/nombreApp"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/Input_contraseña"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@id/Input_usuario"
+        app:layout_constraintStart_toStartOf="@id/Input_usuario"
+        app:layout_constraintTop_toBottomOf="@id/Input_usuario"
+        app:strokeColor="@color/nombreApp"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/Bt_Ingresa_google"
         android:layout_width="327dp"
         android:layout_height="68dp"
         android:backgroundTint="@color/white"
@@ -114,13 +116,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/Recupera_contra"
         app:layout_constraintVertical_bias="0.444"
         app:strokeColor="@color/nombreApp"
         app:strokeWidth="4dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Recupera_contra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/recu_contra"
@@ -129,11 +131,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/Bt_Ingresa"
         app:layout_constraintVertical_bias="0.137" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/No_cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -141,31 +143,31 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/textView4"
+        app:layout_constraintEnd_toStartOf="@id/Registrate"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Registrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Registrate"
         android:textColor="#00FDFD"
         android:textSize="20sp"
-        app:layout_constraintBaseline_toBaselineOf="@id/textView3"
+        app:layout_constraintBaseline_toBaselineOf="@id/No_cuenta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textView3" />
+        app:layout_constraintStart_toEndOf="@id/No_cuenta" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="53dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@id/button6"
-        app:layout_constraintStart_toStartOf="@id/button6"
-        app:layout_constraintTop_toTopOf="@id/button6"
+        app:layout_constraintBottom_toBottomOf="@id/Bt_Ingresa_google"
+        app:layout_constraintStart_toStartOf="@id/Bt_Ingresa_google"
+        app:layout_constraintTop_toTopOf="@id/Bt_Ingresa_google"
         app:srcCompat="@mipmap/ic_google" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
