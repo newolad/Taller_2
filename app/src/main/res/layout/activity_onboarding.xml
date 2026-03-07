@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".activities.OnboardingActivity">
+
+    <ImageView
+        android:id="@+id/Logo_2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@mipmap/logo_taller_2_foreground" />
 
     <TextView
         android:id="@+id/appventure2"
@@ -16,39 +26,26 @@
         android:textColor="@color/nombreApp"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
-
-    <ImageView
-        android:id="@+id/Logo_2"
-        android:layout_width="296dp"
-        android:layout_height="298dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/logo_taller_2_foreground" />
+        android:layout_marginBottom="20dp" />
 
     <TextView
         android:id="@+id/Intro"
-        android:layout_width="346dp"
-        android:layout_height="105dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/intro"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/BotonComienza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/nombreApp"
+        android:text="@string/comienza"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appventure2"
-        app:layout_constraintVertical_bias="0.071" />
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/Link_registrate"
@@ -56,25 +53,6 @@
         android:layout_height="wrap_content"
         android:text="@string/registrate"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Intro"
-        app:layout_constraintVertical_bias="0.741" />
+        android:textSize="18sp"/>
 
-    <Button
-        android:id="@+id/BotonComienza"
-        android:layout_width="279dp"
-        android:layout_height="66dp"
-        android:backgroundTint="@color/nombreApp"
-        android:text="@string/comienza"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/Link_registrate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Intro"
-        app:strokeColor="@color/white"
-        app:strokeWidth="3dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

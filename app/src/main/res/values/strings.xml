@@ -8,4 +8,15 @@
     <string name="text_intro">La aventura esta por iniciar, por favor inicia sesion</string>
     <string name="sin_cuenta">No tienes cuenta?</string>
     <string name="recu_contra">Recupera tu contraseña</string>
+
+    <!-- Strings para Registro -->
+    <string name="titulo_registro">Registro</string>
+    <string name="hint_nombres">Nombres</string>
+    <string name="hint_apellidos">Apellidos</string>
+    <string name="hint_correo">Correo Electrónico</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="hint_re_contraseña">Re - Contraseña</string>
+    <string name="terminos_condiciones">Acepto los Términos y Condiciones</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta? Inicia sesión</string>
 </resources>
