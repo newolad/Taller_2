@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#65635F</color>
     <color name="nombreApp">#F6007F</color>
+    <color name="rosa">#F6007F</color>
+    <color name="azul_resaltar">#00FDFD</color>
 </resources>

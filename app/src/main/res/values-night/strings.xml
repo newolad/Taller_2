@@ -7,4 +7,12 @@
     <string name="text_intro">La aventura esta por iniciar, por favor inicia sesion</string>
     <string name="sin_cuenta">No tienes cuenta?</string>
     <string name="recu_contra">Recupera tu contraseña</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="ingresa_con_google">Ingresa con google</string>
+    <string name="usuario">Usuario</string>
+    <string name="cat_logo">Catálogo</string>
+    <string name="carrito">Carrito</string>
+    <string name="perfil">Perfil</string>
 </resources>

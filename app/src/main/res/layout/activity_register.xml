@@ -2,107 +2,130 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/re_ll_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".activities.RegisterActivity">
 
     <TextView
-        android:id="@+id/tv_titulo_registro"
-        android:layout_width="wrap_content"
+        android:id="@+id/re_tv_titulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/titulo_registro"
-        android:textColor="@color/nombreApp"
+        android:textColor="@color/rosa"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginTop="60dp"
+        android:gravity="center"/>
 
-    <EditText
-        android:id="@+id/et_nombres"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:hint="@string/hint_nombres"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-    <EditText
-        android:id="@+id/et_apellidos"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:hint="@string/hint_apellidos"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="25dp"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/et_correo"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:hint="@string/hint_correo"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp" />
+            <EditText
+                android:id="@+id/re_et_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_nombres"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp" />
 
-    <EditText
-        android:id="@+id/et_contraseña"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:hint="@string/hint_contraseña"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp" />
+            <EditText
+                android:id="@+id/re_et_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_apellidos"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp" />
 
-    <EditText
-        android:id="@+id/et_re_contraseña"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:hint="@string/hint_re_contraseña"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="15dp" />
+            <EditText
+                android:id="@+id/re_et_correo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_correo"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp" />
 
-    <TextView
-        android:id="@+id/tv_terminos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/terminos_condiciones"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:layout_marginBottom="20dp" />
+            <EditText
+                android:id="@+id/re_et_contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_contraseña"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp" />
 
-    <Button
-        android:id="@+id/btn_registrarse"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:backgroundTint="@color/nombreApp"
-        android:text="@string/btn_registrarse"
-        android:textSize="20sp"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
+            <EditText
+                android:id="@+id/re_et_re_contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_re_contraseña"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp" />
 
-    <TextView
-        android:id="@+id/tv_ir_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/ya_tienes_cuenta"
-        android:textColor="#00FDFD"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+            <CheckBox
+                android:id="@+id/re_cb_terminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terminos_condiciones"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="25dp"
+                android:buttonTint="@color/white" />
+
+            <Button
+                android:id="@+id/re_btn_registrarse"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/rosa"
+                android:text="@string/btn_registrarse"
+                android:textSize="20sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/re_tv_ir_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ya_tienes_cuenta"
+                android:textColor="@color/azul_resaltar"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

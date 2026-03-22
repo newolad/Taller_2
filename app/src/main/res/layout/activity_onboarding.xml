@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Nombre_app"
-        android:textColor="@color/nombreApp"
+        android:textColor="@color/rosa"
         android:textSize="40sp"
         android:textStyle="bold"
         android:layout_marginBottom="20dp" />
@@ -42,7 +42,7 @@
         android:id="@+id/BotonComienza"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/nombreApp"
+        android:backgroundTint="@color/rosa"
         android:text="@string/comienza"
         android:textSize="24sp"
         android:layout_marginBottom="16dp" />

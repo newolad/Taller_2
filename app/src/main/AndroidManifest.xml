@@ -13,15 +13,15 @@
         android:theme="@style/Theme.Clase_Dos">
         <activity
             android:name=".activities.RegisterActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.LoginActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.OnboardingActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.main.MainActivity"
             android:exported="false" />
         <activity
             android:name=".activities.SplashActivity"
