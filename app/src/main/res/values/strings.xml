@@ -33,4 +33,9 @@
     <string name="cat_logo">Catálogo</string>
     <string name="carrito">Carrito</string>
     <string name="perfil">Perfil</string>
+    <string name="gestion_administrativa">Gestión Administrativa</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="productos_destacados">Productos Destacados</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="agregar_al_carrito">agregar al carrito</string>
 </resources>

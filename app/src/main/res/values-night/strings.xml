@@ -15,4 +15,6 @@
     <string name="cat_logo">Catálogo</string>
     <string name="carrito">Carrito</string>
     <string name="perfil">Perfil</string>
+    <string name="gestion_administrativa">Gestión Administrativa</string>
+    <string name="usuarios">Usuarios</string>
 </resources>
