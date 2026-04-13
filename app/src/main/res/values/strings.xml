@@ -38,4 +38,8 @@
     <string name="productos_destacados">Productos Destacados</string>
     <string name="imagen_del_producto">Imagen del producto</string>
     <string name="agregar_al_carrito">agregar al carrito</string>
+
+    <!-- Perfil Edicion -->
+    <string name="titulo_editar_perfil">Editar Perfil</string>
+    <string name="btn_guardar_cambios">Guardar Cambios</string>
 </resources>
