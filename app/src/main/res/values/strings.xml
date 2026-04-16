@@ -24,8 +24,8 @@
     <string name="inicio">Inicio</string>
     <string name="catalogo">Catalogo</string>
     <string name="favoritos">Favoritos</string>
-    <string name="navigation_drawer_open" />
-    <string name="navigation_drawer_close" />
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="ingresa_con_google">Ingresa con google</string>
     <string name="ingresa">Ingresa</string>
     <string name="contrasena">Contraseña</string>
@@ -42,4 +42,5 @@
     <!-- Perfil Edicion -->
     <string name="titulo_editar_perfil">Editar Perfil</string>
     <string name="btn_guardar_cambios">Guardar Cambios</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
 </resources>
