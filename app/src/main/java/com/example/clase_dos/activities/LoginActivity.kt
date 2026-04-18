@@ -136,6 +136,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun irAPantallaPrincipal() {
         runOnUiThread {
+            Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
             finishAffinity()
         }
