@@ -1,6 +1,8 @@
 package com.example.clase_dos.activities
 
+import io.github.jan.supabase.storage.Storage
 import io.github.jan.supabase.auth.Auth
+import io.github.jan.supabase.auth.status.SessionSource
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 
@@ -13,5 +15,6 @@ object SupabaseClient {
     ) {
         install(plugin = Auth)
         install(plugin = Postgrest)
+        install(plugin = Storage)
     }
 }

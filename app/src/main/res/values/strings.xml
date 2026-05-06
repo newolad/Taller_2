@@ -14,8 +14,8 @@
     <string name="hint_nombres">Nombres</string>
     <string name="hint_apellidos">Apellidos</string>
     <string name="hint_correo">Correo Electrónico</string>
-    <string name="hint_contraseña">Contraseña</string>
-    <string name="hint_re_contraseña">Re - Contraseña</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="hint_re_contrasena">Re - Contraseña</string>
     <string name="terminos_condiciones">Acepto los Términos y Condiciones</string>
     <string name="btn_registrarse">Registrarse</string>
     <string name="ya_tienes_cuenta">¿Ya tienes cuenta? Inicia sesión</string>
@@ -39,8 +39,12 @@
     <string name="imagen_del_producto">Imagen del producto</string>
     <string name="agregar_al_carrito">agregar al carrito</string>
 
-    <!-- Perfil Edicion -->
+    <!-- Perfil -->
     <string name="titulo_editar_perfil">Editar Perfil</string>
     <string name="btn_guardar_cambios">Guardar Cambios</string>
     <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="nombre_usuario">Nombre de Usuario</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="correo_ejemplo_com">correo@ejemplo.com</string>
+    <string name="foto_de_perfil">Foto de perfil</string>
 </resources>

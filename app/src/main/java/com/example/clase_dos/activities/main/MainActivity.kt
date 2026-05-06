@@ -93,6 +93,7 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             try {
                 SupabaseClient.client.auth.signOut()
+                com.example.clase_dos.data.CredencialesManager.limpiarCredenciales(this@MainActivity)
                 runOnUiThread {
                     Toast.makeText(this@MainActivity, "Sesión cerrada", Toast.LENGTH_SHORT)
                         .show()

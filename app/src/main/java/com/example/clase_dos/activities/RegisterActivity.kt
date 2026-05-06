@@ -15,11 +15,10 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.clase_dos.R
+import com.example.clase_dos.data.UsuarioRepository
 import io.github.jan.supabase.auth.auth
 import io.github.jan.supabase.auth.providers.builtin.Email
-import io.github.jan.supabase.postgrest.postgrest
 import kotlinx.coroutines.launch
-import kotlinx.serialization.Serializable
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -31,14 +30,6 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var cbTerminos: CheckBox
     private lateinit var btnRegistrarse: Button
     private lateinit var tvIrLogin: TextView
-
-    @SuppressLint("UnsafeOptInUsageError")
-    @Serializable
-    data class UsuarioData(
-        val id: String,
-        val nombres: String,
-        val apellidos: String
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,8 +60,8 @@ class RegisterActivity : AppCompatActivity() {
         etNombres = findViewById(R.id.re_et_nombres)
         etApellidos = findViewById(R.id.re_et_apellidos)
         etCorreo = findViewById(R.id.re_et_correo)
-        etContrasena = findViewById(R.id.re_et_contraseña)
-        etReContrasena = findViewById(R.id.re_et_re_contraseña)
+        etContrasena = findViewById(R.id.re_et_contrasena)
+        etReContrasena = findViewById(R.id.re_et_re_contrasena)
         cbTerminos = findViewById(R.id.re_cb_terminos)
         btnRegistrarse = findViewById(R.id.re_btn_registrarse)
         tvIrLogin = findViewById(R.id.re_tv_ir_login)
@@ -111,12 +102,11 @@ class RegisterActivity : AppCompatActivity() {
                     }
                     //Paso2: UUID y pasos adicionales
                     val userId = SupabaseClient.client.auth.currentUserOrNull()?.id?:""
-                    SupabaseClient.client.postgrest["usuarios"].insert(
-                        UsuarioData(
-                            id = userId,
-                            nombres = nombres,
-                            apellidos = apellidos
-                        )
+                    UsuarioRepository.insertarUsuario(
+                        id = userId,
+                        nombres = nombres,
+                        apellidos = apellidos,
+                        correo = correo
                     )
 
                     //Paso 3: Registro exitoso
